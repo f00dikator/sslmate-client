@@ -16,7 +16,9 @@ class sslMateClient:
     def __init__(self, base_url, key, approval_proxy='', verify=True):
         """
         Main entry-point into class
-        :param token: A valid Calendly API Token
+        :param base_url: string, the base URL of the API
+        :param key: string, A valid sslmate API key
+        :param approval_proxy: string, URI to the approval HTTP endpoint of sslmate
         :param verify: defaults to True for verify TLS/SSL certs
         """
         self.base_url = base_url
